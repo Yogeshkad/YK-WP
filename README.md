@@ -2,3 +2,4 @@
 Wordpress them building study
 Web commit
 this local commit
+Privacy updated 
