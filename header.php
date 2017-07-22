@@ -23,18 +23,19 @@
 
   <body>
 
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Home</a>
-         <?php wp_list_pages( '&title_li=' ); ?>
-        </nav>
-      </div>
+  <nav class="navbar navbar-inverse">
+    <div class=container>
+        <div class=navbar-header>
+            <button class=navbar-toggle type=button data-target=#myNavbar data-toggle=collapse><span class=icon-bar></span>
+			<span class=icon-bar></span> <span class=icon-bar></span></button><a href="<?php echo get_bloginfo( 'wpurl' );?>" class=navbar-brand> Yogesh Kadvekar</a></div>
+        <div class="collapse navbar-collapse" id=myNavbar>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="<?php echo get_bloginfo( 'wpurl' );?>">Me</a>
+               <?php wp_list_pages( '&title_li=' ); ?>
+        </div>
     </div>
+</nav>
 
-    <div class="container">
+    <div class="matercontainer container">
 
-      <div class="blog-header">
-        <h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-        <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
-      </div>
+     
