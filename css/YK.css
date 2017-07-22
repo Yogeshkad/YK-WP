@@ -1,0 +1,478 @@
+/* Body */  
+body{  
+	background: url('../images/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+	}
+
+/* Container Width */  
+@media (min-width: 1200px){
+    .container{max-width: 970px;}
+	}
+
+/* Navigation */
+.navbar-brand{ 
+    font-family: Pacifico; 
+	font-size: 25px !important;
+	}
+	
+.navbar{
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);	
+    font-size: 14px !important;    
+    border-radius: 0;
+    padding-top: 30px;	
+	}
+	
+.navbar li a, .navbar .navbar-brand{
+    color: #fff !important;
+	}
+	
+.navbar-nav li a:hover, .navbar-nav li.active a{
+    color: #f4511e !important;  border-bottom: 1px solid #ff0000;
+	}
+	
+.navbar-default .navbar-toggle {      
+	border-color: transparent;
+    color: #fff !important;
+    }
+
+/*  Container 1  */
+#yk_intro.container{     
+	width: 100%;
+	height: 500px;
+	position: relative;
+	border-radius: 0;
+	padding: 0px;
+		background: url('../images/bgWhite.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+	}		
+
+.yk_intro-margin-top{
+	margin-top: 100px; 
+	margin-left: 50px;	
+	}
+
+.yk_into-text{
+	letter-spacing: 0px;
+	transition: all .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+	font-family: Roboto;	
+	font-size: 25px;
+    line-height: 36px;     
+    font-style: light;
+    font-weight: 300;	
+	margin-bottom: 32px;
+	}
+	
+.yk_into-text1{
+	letter-spacing: 0px;
+	transition: all .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+	font-family: Roboto;
+    font-size: 70px;
+    line-height: 79px;
+    font-style: bold;
+	font-weight: 500;
+    margin-bottom: 23px;  
+    color: #000;
+	}
+
+/* Container 2 */ 
+ #yk_experience.container{	
+	width: 100%;
+	position: relative;
+	margin-top: 20px;   
+    color: #fff;      	
+	}
+
+ .col1{  
+    background:red;
+    padding-top: 95px;
+    padding-left: 70px;
+	padding-bottom: 20px;
+    }
+
+ .col2{    
+    background: rgba(0, 0, 0, 0.6);  
+    padding-top: 60px;
+	padding-bottom: 20px;
+    }
+
+.headertxt{
+	font-size: 26px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    margin-bottom: 31px;
+    transition: all .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    font-family: Roboto;
+    font-style: bold;
+    font-weight: 700;
+	}	
+	
+/* Counter */
+.count{
+    line-height: 100px;
+    color:#fff;
+    font-size:100px;
+	}
+
+/* Container 3 */
+ #yk_biography.container{	
+	width: 100%;
+	position: relative;
+	margin-top: 20px;   
+	padding:0px;
+    color: #fff;	
+	}
+
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover
+{border: 3px solid #ff0000;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover
+{background-color: #ff0000; color: #ffffff;}
+
+ ul.nav-justified{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 3px solid #ff0000;    
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+	}
+
+/* Float the list items side by side */
+ul.nav-justified li{
+	float: left; 
+	border-right: 1px solid #323232;
+	}
+
+/* Style the links inside the list items */
+ul.nav-justified li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 0px 14px 0px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.nav-justified li a:hover {
+    background-color: #ff0000;
+    width: 100%;
+}
+
+/* Create an active/current tablink class */
+ul.nav-justified li a:focus, .active {
+    background-color: #ff0000;
+    width: 100%;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px 40px;     
+} 
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+		
+
+/* Circle Progress Bar */ 
+ #yk_skill.container {	
+	width: 100%;	
+	position: relative;
+	margin-top: 20px;   
+    color: #fff;
+    padding: 0px; 	
+	}
+
+.transparent {
+	background: rgba(0, 0, 0, 0.6); 
+    padding: 20px 40px;
+    text-align: center;
+	color: #FFF;
+    font-size: 25px;
+	}
+
+ .pie-title-center {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.pie-value {
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  height: 40px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -20px;
+  line-height: 40px;
+}
+
+/* Scroll To Top*/ 
+.scrollToTop{
+	width:120px; 
+	height:200px;
+	padding:10px; 
+	text-align:center; 
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	position:fixed;
+	bottom:75px;
+	right:300px;
+	display:none;
+	background: url('../images/1.png') no-repeat 2px 35px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+	color: #ff0000;
+}
+
+/* Animation */
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+/* Contact Container */  
+ #Contact.container {	
+	width: 100%;
+	position: relative;
+	margin-top: 20px;   
+    background: rgba(255,255,255,0.87);
+    padding: 20px 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.form-control
+{
+	border: 1px solid #808080;
+}
+ 
+ .input-group-addon
+{
+	border: 1px solid #808080;
+}
+ 
+	
+/* Scroll To Top*/ 
+.scrollToTop{
+	width:60px; 
+	height:100px;
+	padding:0px; 
+	text-align:center; 
+	font-weight: light;
+	color: #ffffff;
+	text-decoration: none;
+	position:fixed;
+	bottom:50px;
+	right:10px;
+	display:none;
+	background: url('../images/1.png') no-repeat 2px 35px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+	color: #ff0000;
+}
+
+
+/* Animation */
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}	
+
+/* Social Media  */
+#followusonsocialmedia
+{
+	padding: 0px;
+	 margin-top: 50px;
+}
+
+.followus
+{
+	background: rgba(0, 0, 0, 0.6); 
+ padding: 20px 40px;
+ text-align: center;
+
+ width: 100%;
+	
+}
+
+
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.social-circle a {
+ background-color: #D3D3D3;   
+}
