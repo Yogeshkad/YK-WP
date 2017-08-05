@@ -2,9 +2,7 @@
   <div class="card mb-3 ">
   
  
-  <h4 class="card-header"><?php foreach((get_the_category()) as $category){
-        echo $category->name;
-        }?></h4>
+  
   <?php 
   
   
