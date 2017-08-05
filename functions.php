@@ -28,6 +28,11 @@ add_theme_support( 'title-tag' );
 
 // Support Featured Images
 add_theme_support( 'post-thumbnails' );
+// custom excerpt lenght setting from admin panel
+function custom_excerpt_length() {
+	return get_option( 'customexcerptlenght' );
+}
+add_filter('excerpt_length', 'custom_excerpt_length');
 
 // Custom settings
 function custom_settings_add_menu() {
@@ -58,13 +63,22 @@ function setting_github() { ?>
   <input type="text" name="github" id="github" value="<?php echo get_option('github'); ?>" />
 <?php }
 
+function setting_excerpt(){ ?>
+<input type="text" name="customexcerptlenght" id="customexcerptlenght" value="<?php echo get_option( 'customexcerptlenght' ); ?>" />
+<?php }
+
 function custom_settings_page_setup() {
-  add_settings_section( 'section', 'All Settings', null, 'theme-options' );
+  add_settings_section( 'section', 'Social Media Link Settings', null, 'theme-options' );
   add_settings_field( 'twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section' );
 
    add_settings_field( 'github', 'Github URL', 'setting_github', 'theme-options', 'section' );
    register_setting('section', 'github');
 	register_setting('section', 'twitter');
+	
+	// add setting for excerpt lenght
+	add_settings_section( 'sectionformating', 'Formating Settings', null, 'theme-options' );
+	add_settings_field( 'customexcerptlenght', 'Enter excerpt lenght', 'setting_excerpt', 'theme-options', 'section' );
+	register_setting('section', 'customexcerptlenght');
 }
 
 add_action( 'admin_init', 'custom_settings_page_setup' );

@@ -1,21 +1,30 @@
-<div class="blog-post">
-	<h2 class="blog-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-	<p class="blog-post-meta"><?php the_date(); ?> by <a href="#"><?php the_author(); ?></a> <a href="<?php comments_link(); ?>">
-	<?php printf( _nx( 'One Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ), number_format_i18n(get_comments_number() ) ); ?></a></p>
+  <div class="col-sm-6">
+  <div class="card mb-3 ">
+  
  
-<?php
+  <h4 class="card-header"><?php foreach((get_the_category()) as $category){
+        echo $category->name;
+        }?></h4>
+  <?php 
+  
+  
  //to show the post thumbnail below is code 
-if ( has_post_thumbnail() ) {?>
-	<div class="row">
-		<div class="col-md-4">
-			<?php	the_post_thumbnail('thumbnail'); ?>
-		</div>
-		<div class="col-md-6">
-			<?php the_excerpt(); ?>
-		</div>
-	</div>
-	<?php } else { ?>
-	<?php the_excerpt(); ?>
-	<?php } ?>
+if ( has_post_thumbnail() ) {?> <img class="card-img-top img-fluid" src="<?php the_post_thumbnail_url();?>" alt="Card image cap"><?php } else {?> <img class="card-img-top img-fluid" src="<?php echo get_bloginfo( 'template_directory' );?>/images/default_image.PNG" alt="Card image cap"><?php } ?>
+ <div class="card-block">
+      <h4 class="card-title"><?php the_title(); ?></h4>
+      <div class="card-text"><?php the_excerpt(); ?>
+	  <small class="text-muted">Last updated <?php echo get_the_date(); ?></small>
+	  </div>
+	  
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="<?php the_permalink(); ?>">Read More</a></small>
+    </div>
+  
+  </div>
+  </div>
 
-</div><!-- /.blog-post -->
+
+
+
+

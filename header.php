@@ -21,21 +21,33 @@
 	<?php wp_head();?>
   </head>
 
-  <body>
-
-  <nav class="navbar navbar-inverse">
-    <div class=container>
+<body>
+<div class=container>
+ <nav class="navbar navbar-toggleable-md navbar-inverse">
+    
         <div class=navbar-header>
-            <button class=navbar-toggle type=button data-target=#myNavbar data-toggle=collapse><span class=icon-bar></span>
-			<span class=icon-bar></span> <span class=icon-bar></span></button><a href="<?php echo get_bloginfo( 'wpurl' );?>" class=navbar-brand> Yogesh Kadvekar</a></div>
-        <div class="collapse navbar-collapse" id=myNavbar>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo get_bloginfo( 'wpurl' );?>">Me</a>
-               <?php wp_list_pages( '&title_li=' ); ?>
-        </div>
-    </div>
+             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<a href="<?php echo get_bloginfo( 'wpurl' );?>" class="navbar-brand"> Yogesh Kadvekar</a>
+		</div>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span>
+					</a> 
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Blog 
+					</a> 
+				</li>
+              
+			</ul>
+		</div>        
+    
 </nav>
+</div>
 
-    <div class="matercontainer container">
+<div class="matercontainer container">
 
      
