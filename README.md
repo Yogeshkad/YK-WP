@@ -1,11 +1,11 @@
 # YK-WP
 This Theme is developed for Yogeshkadvekar.com. code of this theme is available for reuse and education purpose. You are free to use this code.
 
-#How to setup this theme
+# How to setup this theme
 
 Code in this repository is only theme folder. Zip this folder and upload on your wordpress theme.
 
-#Theme Setting
+# Theme Setting
 
 1. To set your frontpage html upload your html file in theme folder rename it as front-page.php
 
