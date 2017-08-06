@@ -33,12 +33,12 @@
 		</div>
 		<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
 			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span>
+				<li class="nav-item">
+					<a class="nav-link" href="<?php echo get_bloginfo( 'wpurl' );?>">Home <span class="sr-only">(current)</span>
 					</a> 
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Blog 
+					<a class="nav-link" href="<?php echo get_bloginfo( 'wpurl' );?>/blog/">Blog 
 					</a> 
 				</li>
               

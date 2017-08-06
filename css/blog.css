@@ -40,8 +40,9 @@ h6, .h6 {
 
 	
 	background-color: rgba(255,255,255,1);
-	padding-top: 10px;
+	padding-top: 30px;
 	padding-left:10px;
+	
    
 }
 	
@@ -121,7 +122,7 @@ h6, .h6 {
 /* Sidebar modules for boxing content */
 .sidebar-module {
   padding: 15px;
-  margin: 0 -15px 15px;
+  
 }
 .sidebar-module-inset {
   padding: 15px;
@@ -205,7 +206,9 @@ font-family: "Open Sans script=all rev=1";
 
 .followus
 {
-background: rgba(0, 0, 0, 0.6); 
+background: #181818; 
+color: #f0e9e9;
+
  padding: 20px 40px;
  text-align: center;
 
@@ -297,7 +300,7 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 .social-circle a {
- background-color: #D3D3D3;   
+ background-color: #ea2828   
 }
 
 
@@ -309,4 +312,21 @@ a.socialIcon:hover, .socialHoverClass {
 
  width: 100%;
 	
+}
+.comment-author a,
+.comment-author cite.fn {
+	color: #b65e67
+}
+
+.terminal {
+	background: #111;
+	border: 1px solid #000
+}
+
+.comment-meta commentmetadata
+{
+	font-size: 16px;
+}
+.comment-body {
+	border-bottom: 1px solid #516272
 }

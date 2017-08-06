@@ -103,7 +103,7 @@ body{
 
  .col2{    
     background: rgba(0, 0, 0, 0.6);  
-    padding-top: 60px;
+    padding-top: 35px;
 	padding-bottom: 20px;
     }
 
@@ -379,17 +379,24 @@ ul.nav-justified li a:focus, .active {
 	 margin-top: 50px;
 }
 
+/* Social Media  */
+#followusonsocialmedia
+{
+	padding: 0px;
+	 margin-top: 20px;
+}
+
 .followus
 {
-	background: rgba(0, 0, 0, 0.6); 
+background: #181818; 
+color: #f0e9e9;
+
  padding: 20px 40px;
  text-align: center;
 
  width: 100%;
 	
 }
-
-
 
 /*=========================
   Icons
@@ -406,8 +413,6 @@ ul.social-network li {
 	display: inline;
 	margin: 0 5px;
 }
-
-
 /* footer social icons */
 .social-network a.icoRss:hover {
 	background-color: #F56505;
@@ -416,6 +421,9 @@ ul.social-network li {
 	background-color:#3B5998;
 }
 .social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGithub:hover {
 	background-color:#33ccff;
 }
 .social-network a.icoGoogle:hover {
@@ -427,7 +435,7 @@ ul.social-network li {
 .social-network a.icoLinkedin:hover {
 	background-color:#007bb7;
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoGithub:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
 }
@@ -474,5 +482,5 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 .social-circle a {
- background-color: #D3D3D3;   
+ background-color: #ea2828   
 }
