@@ -126,4 +126,5 @@ function add_image_responsive_class($content) {
    return $content;
 }
 add_filter('the_content', 'add_image_responsive_class');
+
 ?>
