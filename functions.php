@@ -115,4 +115,15 @@ function create_my_custom_post() {
 	));
 }
 add_action('init', 'create_my_custom_post'); 
+
+//function to add bootstrap responive image class on all images
+
+function add_image_responsive_class($content) {
+   global $post;
+   $pattern ="/<img(.*?)class=\"(.*?)\"(.*?)>/i";
+   $replacement = '<img$1class="$2 img-fluid"$3>';
+   $content = preg_replace($pattern, $replacement, $content);
+   return $content;
+}
+add_filter('the_content', 'add_image_responsive_class');
 ?>
