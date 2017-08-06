@@ -1,5 +1,5 @@
 # YK-WP
-This Theme is developed for Yogeshkadvekar.com. code of this theme is available for reuse and education purpose. You are free to use this code.
+This theme is developed for http://yogeshkadvekar.com , code of this theme is available for reuse and education purpose. You are free to use this code.
 
 # How to setup this theme
 
